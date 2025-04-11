@@ -1,0 +1,74 @@
+<mvc:View controllerName="project1.controller.CreateOrder"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:layout="sap.ui.layout" >
+    <f:DynamicPage id="page" headerExpanded="false" showFooter="true" toggleHeaderOnTitleClick="true">
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:heading>
+                    <HBox>
+                        <Title text="물품 요청 생성" />
+                    </HBox>
+                </f:heading>
+                <f:snappedContent>
+                    <form:SimpleForm layout="ResponsiveGridLayout">
+                        <form:content>
+                            <VBox>
+                                <Label text="요청 번호" ></Label>
+                                <Text id="ReqNum" />
+                                <layoutData>
+                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                </layoutData>
+                            </VBox>
+                            <VBox>
+                                <Label text="요청 일자" ></Label>
+                                <Text id="ReqDate" />
+                                <layoutData>
+                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                </layoutData>
+                            </VBox>
+                            <VBox>
+                                <Label text="요청 물품" ></Label>
+                                <Input id="ReqGood" />
+                                <layoutData>
+                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                </layoutData>
+                            </VBox>
+                            <VBox>
+                                <Label text="물품 개수" ></Label>
+                                <Input id="ReqQty" />
+                                <layoutData>
+                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                </layoutData>
+                            </VBox>
+                            <VBox>
+                                <Label text="요청자" ></Label>
+                                <Input id="Requester" />
+                                <layoutData>
+                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                </layoutData>
+                            </VBox>
+                            <VBox>
+                                <Label text="예상 가격" ></Label>
+                                <Input id="ReqPrice" />
+                                <layoutData>
+                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                </layoutData>
+                            </VBox>
+                            <VBox>
+                                <Label text="요청 사유" ></Label>
+                                <Input id="ReqReason" />
+                                <layoutData>
+                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                </layoutData>
+                            </VBox>
+                        </form:content>
+                    </form:SimpleForm>
+                </f:snappedContent>
+            </f:DynamicPageTitle>
+        </f:title>
+    </f:DynamicPage>
+</mvc:View>
+

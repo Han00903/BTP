@@ -46,22 +46,22 @@
       "cozy": true
     },
     "models": {
-            "i18n": {
-                "type": "sap.ui.model.resource.ResourceModel",
-                "settings": {
-                    "bundleName": "project1.i18n.i18n"
-                }
-            },
-            "": {
-                "dataSource": "mainService",
-                "preload": true,
-                "settings": {}
-            },
-            "Request": {
-                "type": "sap.ui.model.json.JSONModel",
-                "uri": "RequestOrder.json"
-            }
-        },
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "project1.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
+      },
+      "Request": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "RequestOrder.json"
+      }
+    },
     "resources": {
       "css": [
         {
@@ -82,29 +82,42 @@
         "viewPath": "project1.view"
       },
       "routes": [
-                {
-                    "name": "Request",
-                    "pattern": "",
-                    "target": [
-                        "Request"
-                    ]
-                }
-            ],
-            "targets": {
-                "Request": {
-                    "viewType": "XML",
-                    "transition": "slide",
-                    "clearControlAggregation": false,
-                    "viewId": "Request",
-                    "viewName": "Request"
-                }
-            }
+        {
+          "name": "Request",
+          "pattern": "",
+          "target": [
+            "Request"
+          ]
         },
-        "rootView": {
-            "viewName": "project1.view.app",
-            "type": "XML",
-            "async": true,
-            "id": "appView"
+        {
+          "name": "CreateOrder",
+          "pattern": "CreateOrder",
+          "target": [
+            "CreateOrder"
+          ]
         }
+      ],
+      "targets": {
+        "Request": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Request",
+          "viewName": "Request"
+        },
+        "CreateOrder": {
+          "viewType": "XML",
+          "transition": "slide",
+          "viewId": "CreateOrder",
+          "viewName": "CreateOrder"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "project1.view.app",
+      "type": "XML",
+      "async": true,
+      "id": "appView"
     }
+  }
 }
