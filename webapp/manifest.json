@@ -73,26 +73,29 @@
         "viewPath": "project1.view"
       },
       "routes": [
-        {
-          "name": "Routeapp",
-          "pattern": ":?query:",
-          "target": [
-            "Targetapp"
-          ]
+                {
+                    "name": "Request",
+                    "pattern": "",
+                    "target": [
+                        "Request"
+                    ]
+                }
+            ],
+            "targets": {
+                "Request": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "Request",
+                    "viewName": "Request"
+                }
+            }
+        },
+        "rootView": {
+            "viewName": "project1.view.app",
+            "type": "XML",
+            "async": true,
+            "id": "appView"
         }
-      ],
-      "targets": {
-        "Targetapp": {
-          "id": "app",
-          "name": "app"
-        }
-      }
-    },
-    "rootView": {
-      "viewName": "project1.view.App",
-      "type": "XML",
-      "id": "App",
-      "async": true
     }
-  }
 }
