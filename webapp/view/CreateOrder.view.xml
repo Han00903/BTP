@@ -17,51 +17,51 @@
                         <form:content>
                             <VBox>
                                 <Label text="요청 번호" ></Label>
-                                <Text id="ReqNum" />
+                                <Input id="ReqNum" />
                                 <layoutData>
-                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
-                                </layoutData>
-                            </VBox>
-                            <VBox>
-                                <Label text="요청 일자" ></Label>
-                                <Text id="ReqDate" />
-                                <layoutData>
-                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                    <layout:GridData span="XL6 L6 M3 S12" />
                                 </layoutData>
                             </VBox>
                             <VBox>
                                 <Label text="요청 물품" ></Label>
                                 <Input id="ReqGood" />
                                 <layoutData>
-                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                    <layout:GridData span="XL6 L6 M3 S12" />
                                 </layoutData>
                             </VBox>
                             <VBox>
                                 <Label text="물품 개수" ></Label>
                                 <Input id="ReqQty" />
                                 <layoutData>
-                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                    <layout:GridData span="XL6 L6 M3 S12" />
                                 </layoutData>
                             </VBox>
                             <VBox>
                                 <Label text="요청자" ></Label>
                                 <Input id="Requester" />
                                 <layoutData>
-                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                    <layout:GridData span="XL6 L6 M3 S12" />
+                                </layoutData>
+                            </VBox>
+                            <VBox>
+                                <Label text="요청 일자" ></Label>
+                                <Input id="ReqDate" placeholder="yyyy-MM-DD" />
+                                <layoutData>
+                                    <layout:GridData span="XL6 L6 M3 S12" />
                                 </layoutData>
                             </VBox>
                             <VBox>
                                 <Label text="예상 가격" ></Label>
                                 <Input id="ReqPrice" />
                                 <layoutData>
-                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                    <layout:GridData span="XL6 L6 M3 S12" />
                                 </layoutData>
                             </VBox>
                             <VBox>
                                 <Label text="요청 사유" ></Label>
                                 <Input id="ReqReason" />
                                 <layoutData>
-                                    <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                                    <layout:GridData span="XL12 L12 M12 S12" />
                                 </layoutData>
                             </VBox>
                         </form:content>
@@ -69,6 +69,14 @@
                 </f:snappedContent>
             </f:DynamicPageTitle>
         </f:title>
-    </f:DynamicPage>
+        
+        <f:footer>
+            <OverflowToolbar>
+                <ToolbarSpacer/>
+                <Button type="Emphasized" text="생성" />
+                <Button type="Default" text="취소" press="onBack"/>
+            </OverflowToolbar>
+        </f:footer>
+     </f:DynamicPage>
 </mvc:View>
 
